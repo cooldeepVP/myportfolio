@@ -15,9 +15,9 @@ const moocscards = [
     moocLink: "https://drive.google.com/file/d/1EU-mqWKCyxjWoYcP0jeahyLS1ReLbGWu/view?usp=sharing",
   },
   {
-    title: "Machine Learning",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/learn/machine-learning",
+    title: "CITI Award for SRE Work",
+    cardImage: "assets/images/education-page/citiaward.png",
+    moocLink: "https://drive.google.com/file/d/1aTsZ-FY76IfSRlddm8uIwlMWF3f7FUx7/view?usp=sharing",
   }
   
 ];

@@ -5,26 +5,23 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Software Development Intern",
+    title: "DEVOPS ENGINEERING ANALYST",
     cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
-    time: "(May, 2020 - present)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
+    place: "Citi Corp Pvt. Ltd.",
+    time: "(July, 2022 - present)",
+    desp: "In DevOps UAT Engineering Team at Citi, I focus on ensuring the reliability, robustness, and availability of the UAT env. In DevOps UAT Engineering Team at Citi, I focus on ensuring the reliability, robustness, and availability of the UAT env. for testing Citi’s Private Banking Portal updates. Collaborating closely with development teams, I provide end-to-end support, from project scoping to cutover day, ensuring seamless project delivery. Additionally, I prioritise stabilising the UAT environment to facilitate rigorous testing by the QA team, addressing deployment issues and optimising configurations. My efforts contribute to the successful validation of software updates and enhance observability before their deployment into production, ultimately enhancing the quality and reliability of Product."
   },
   {
-    title: "Student Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
-    time: "(Mar - Aug, 2019)",
-    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
-  },
-  {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "IIT, Bombay",
-    time: "(Dec, 19 - Jan, 20)",
-    desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
-  },
+    title: "Product Engineer -III",
+    cardImage: "assets/images/experience-page/fis.jpg",
+    place: "FIS Global ,Client - Barclays",
+    time: "(Aug 2019 - July 2022)",
+
+    desp: 
+      "identification, reporting, and tracking of software bugs and issues, ensuring timely resolution and minimal disruption to business operations. I have been instrumental in managing the Front, Middle, and Back-office applications for Barclays Investment banking firm, ensuring the smooth operation of critical systems. I have also played a key role in the deployment of code solutions and fixes on client systems, addressing compatibility challenges and rectifying issues raised by clients. I have also conducted Disaster-Recovery/BCP tests alongside Exchange and third-party vendors, fortifying system resilience and minimising potential risks to financial and reputational standing. Leveraging shell and Python scripting, I have automated manual tasks, driving operational efficiency and productivity gains. Skillfully replicated and diagnosed product bugs and issues within lower environment setups, providing comprehensive Root Cause Analysis (RCA) and implementing effective resolutions. Led the deployment of code solutions and fixes on client systems to address compatibility challenges and rectify issues raised by clients. Demonstrated proficiency in managing Windows server patches and upgrades, ensuring the stability and security of the operating environment. Played a central role in the L3 team, ensuring the smooth operation of Front, Middle, and Back-office applications for Barclays Investment banking firm. Executed release activities in the production environment, meticulously planning and bug fixes through a comprehensive Change Management process. Proficiently tracked and addressed all production issues, utilizing INC/PRB/JIRA/SIR systems to prioritise and resolve issues in collaboration with Business Analysts, Level 3 support, and Development Teams. Conducted Disaster-Recovery/BCP tests alongside Exchange and third-party vendors, fortifying system resilience and minimising potential risks to financial and reputational standing.",
+  
+    },
+  
 ];
 
 const showCards2 = () => {

@@ -1,4 +1,3 @@
-
 "use strict";
 // Sweet Alert CDN through JS
 let script = document.createElement("script");
@@ -136,7 +135,7 @@ let footer = $(`
              <div class="form-header">
                 <h6 class="display">Get in Touch</h6>
               </div>
-                <form name="form1" action="https://formcarry.com/s/BywEPAJNb" method="POST" accept-charset="UTF-8" >
+                <form name="form1" action="https://formcarry.com/s/-TLGIcFvEMV" method="POST" accept-charset="UTF-8" >
                   <input id="name" type="text" name="name" placeholder="Your Name" required/>
                   <input id="email" type="email" name="email" placeholder="Email Address" required/>                  
                   <textarea id="textArea" name="message" placeholder="Type your Message for Kuldeep" required></textarea>
@@ -347,13 +346,12 @@ $(window).on("load", function () {
 
 
 $(function submitAnimation() {
-  const name = document.querySelector("#name")
-  const emailAdress = document.querySelector("#email")
-  const text = document.querySelector("#textArea")
+  const name = document.querySelector("#name");
+  const emailAdress = document.querySelector("#email");
+  const text = document.querySelector("#textArea");
   const emailPattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
   $("#lnch").on("click", function () {
-
     // Check if the name field is empty or contains a number
     if (name.value == "" || (/\d/.test(name.value))) {
       swal("Error !","Please enter a valid name !","error");
@@ -370,7 +368,6 @@ $(function submitAnimation() {
       return;
     }
     else {
-
       setTimeout(function () {
         $("#lnch").addClass("launching").text("Sending");
         $("#lnch_btn").addClass("launching");
@@ -379,10 +376,26 @@ $(function submitAnimation() {
         $("#lnch").addClass("launched").text("SENT");
         $("#lnch_btn").addClass("launched");
       }, 1500);
-      // Wait for 2.2 seconds so that the send button animation can be fully played before submitting the form
-      setTimeout(() => {
-        document.querySelector('form').submit();
-      }, 2200);
+
+      // AJAX form submission
+      $.ajax({
+        url: "https://formcarry.com/s/-TLGIcFvEMV",
+        method: "POST",
+        headers: {
+          "Accept": "application/json"
+        },
+        data: {
+          name: name.value,
+          email: emailAdress.value,
+          message: text.value
+        },
+        success: function(response) {
+          swal("Success!", "Your message has been sent!", "success");
+        },
+        error: function(error) {
+          swal("Error!", "There was an error sending your message. Please try again later.", "error");
+        }
+      });
     }
   });
 });
